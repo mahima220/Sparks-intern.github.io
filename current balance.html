@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title> Current Balance </title>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<style>
+		header {
+			background-color:#575F80;
+			padding:15px 15px;
+			margin:15px 15px;
+			text-decoration:underline;
+			text-align:center;
+			color:white;
+			font-size:38px;
+			}
+		body {
+			background-image:url('transaction.png');
+			background-size: cover;
+		     }
+	       input  {
+			font-size:20px;
+			border-radius:10px;
+			padding:15px 15px;
+			margin-left:40%;
+			margin-right:40%;
+			text-align:center;
+			}
+	      label {
+			font-size:28px;
+			font-style:bold;
+			margin-left:40%;
+			margin-right:40%;
+		     }
+		div {
+			background-color:#D7DBDD ;
+			
+		    }
+	     
+	</style>
+</head>
+<body>
+	<p id="demo"></p>
+	<header> Current Balance </header>
+<div>
+        <label for="text"> Enter the User-id </label>
+	<br><br>
+	<input type="text" id="userInput" name="userInput">
+	<br><br>
+	<input type="submit"    onclick="othername()">
+	<br><br>
+</div>	
+<script>  
+		
+  								              
+		function othername()
+				{       var fname,balance;
+					const input = document.getElementById("userInput").value;
+					alert(input);
+				
+			
+			switch(input)
+				{
+				  case "one":
+					document.write("Mahima NP");
+					document.write("10000.0");
+					break;
+				  case "two":
+					document.write("Savitha MR");
+					document.write("20000.0");
+					break;
+				  case "three":
+					document.write("Nagaraj BP");
+					document.write("30000.0");
+					break;					
+				  case "four":
+					document.write("Anusha MR");
+					document.write("40000.0");
+					break;
+     				  case "five":
+					document.write("Sneha AB");
+					document.write("50000.0");
+					break;
+				  case "six":
+					document.write("Riya BC");
+					document.write("60000.0");
+					break;
+				  case "seven":
+					document.write("Rathan DE");
+					document.write("70000.0");
+					break;
+				  case "eight":
+					document.write("Vikas DM");
+					document.write("80000.0");
+					break;
+				  case "nine":
+					document.write("Rajesh RS");
+					document.write("90000.0");
+					break;
+				  case "ten":
+					document.write("Vandana YC");
+					document.write("100000.0");
+					break;
+				 default: document.write("INVALID USERNAME");
+	
+				}}
+
+			
+			
+</script></body></html>

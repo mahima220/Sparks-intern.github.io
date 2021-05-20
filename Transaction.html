@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+	<head>
+		<title> Transaction </title>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<style>
+		header {
+			background-color:#575F80;
+			padding:15px 15px;
+			margin:15px 15px;
+			text-decoration:underline;
+			text-align:center;
+			color:white;
+			font-size:38px;
+			}
+		div {
+			background-color:#ADB1C2;
+			padding:15px 15px;
+			margin:15px 15px;
+			align:center;
+			}
+		input {
+			text-align:center;
+			border-radius:10px;
+			font-size:26px;
+			
+			}
+		label {
+			align:justify;
+			font-size:28px;
+			}
+		body {
+			background-size:cover;
+		     }
+		button {
+			font-size:20px;
+			border-radius:10px;
+			padding:5px 5px;
+			}
+		     p {
+			font-size:20px;
+			background-color:#ADB1C2;
+			padding:15px 15px;
+			margin:15px 15px;
+			align:center;
+			}
+	
+		</style>
+	</head>
+<body style="background-image:url('current balance.png');">
+    <header> TRANSACTION </header>
+<div>
+    <label for="credit">&nbsp&nbsp&diams;&nbsp&nbspEnter the amount to recieved </label>
+    <br><br>
+    <input type="number" id="credit">
+    <br><br>
+    <label for="debit">&nbsp&nbsp&diams;&nbsp&nbspEnter the amount to be sent </label>
+    <br><br>
+    <input type="number" id="debit">
+    <br><br>
+    <button onclick="getPrice()">
+Get Balance
+</button>
+    <br><br>
+    <input readonly type="number" id="total">
+</div>
+	<p> The Current Balance can be mannualy calculated by the user to know the value that can be obtained and money is sent or recieved.</p>
+    <script>
+        getPrice = function() {
+            var numVal1 = Number(document.getElementById("credit").value);
+            var numVal2 = Number(document.getElementById("debit").value);
+            var totalValue = numVal1 - numVal2
+            document.getElementById("total").value = totalValue.toFixed(2);
+        }
+    </script>
+</body>
+</html>
